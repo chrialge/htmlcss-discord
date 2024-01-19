@@ -1,0 +1,139 @@
+/* region common */
+
+:root{
+    --discord-primary: #3161e0;
+    --discord-dark: #23272a;
+    --discord-light: #f6f6f6;
+    --discord-lighter: #ffffff;
+    --discord-primary-important-things: #8ea1e1;
+    --discord-color-text-normal: #434649;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed black;
+}
+
+/* end region common */
+
+/* region utilies */
+
+#site-header{
+    background-color: var(--discord-primary);
+    display: flex;
+}
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.square-small{
+    width: 60%;
+    max-width: 900px;
+    margin:auto;
+    height: 500px;
+}
+.square-60{
+    width: 60%;
+    height: 300px;
+}
+.square-40{
+    width: 40%;
+    height: 300px;
+
+}
+.color-light{
+    background-color: var(--discord-light);
+}
+.color-lighter{
+    background-color: var(--discord-lighter);
+}
+#site-footer{
+    background-color: var(--discord-dark);
+    height: 400px;
+}
+.grow{
+    flex-grow: 1;
+}
+/* end region utilies */
+
+/* region header */
+
+nav{
+    align-items: center;
+    display: flex;
+}
+.logo{
+    flex-grow: 1;
+}
+.login{
+    flex-grow: 1;
+    text-align: end;
+}
+.sidebar{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    justify-content: center;
+}
+li{
+    padding: 0.25rem 0.75rem;
+}
+
+/* end region header */
+
+/* region main */
+
+/* region main top */
+.download-discord{
+    height: 600px;
+    background-color: var(--discord-primary);
+}
+
+/* end region main top */
+
+/* region main central */
+
+/* end region main central */
+
+/* region main bottom */
+.debug{
+    height: 300px;
+}
+/* end region main bottom */
+
+/* end region main */
+
+/* region footer */
+
+/* region footer top */
+
+/* end region footer top */
+.rectangle{
+    height: 200px;
+}
+.element{
+    width: 30%;
+}
+
+/* region footer bottom */
+.dbg{
+    background-color: green;
+
+}
+.btn{
+ text-align: end;
+}
+/* end region footer bottom */
+
+/* end region footer */
+
+
+
+
+
+
