@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -23,6 +23,7 @@
 .btn-small{
     border-radius: 2rem;
     padding: 0.5rem 1rem;
+    border: none;
 }
 #site-header{
     background-color: var(--discord-primary);
@@ -53,14 +54,20 @@
     color: var(--discord-dark);
     padding: 30px 64px;
 }
-.color-light{
-    background-color: var(--discord-light);
+#site-footer{
+    background-color: var(--discord-dark);
 }
 .grow{
     flex-grow: 1;
 }
 section{
     padding: 50px;
+}
+.color-light{
+    background-color: var(--discord-light);
+}
+.color-lighter{
+    background-color: var(--discord-lighter);
 }
 
 /* end region utilies */
@@ -117,6 +124,7 @@ p{
     font-size: 25px;
     padding: 0.75rem 2rem;
     margin-right: 20px ;
+    border: none;
 }
 .btn-browser{
     background-color: var(--discord-dark);
@@ -139,18 +147,26 @@ p{
 h2{
     font-size: 48px;
 }
-.wave{
+
+#wave-light-first{
     width: 100%;
+    transform: translateY(+5px);
 }
-#wave-light{
+#wave-light-second{
     width: 100%;
-    margin: 0;
-    padding: 0;
+    transform: translateY(+5px);    
+}
+#wave-lighter{
+    width: 100%;
+    transform: rotate(180deg);
 
 }
 /* end region main central */
 
 /* region main bottom */
+#image-big{
+    width: 100%;
+}
 .video-call{
     text-align: center;
 
@@ -161,11 +177,16 @@ h2{
 h3{
     font-size: 30px;
     font-weight: 900;
+    margin-bottom: 30px;
 }
 .btn-bottom-download{
     background-color: var(--discord-primary-important-things);
     color: var(--discord-lighter);
     font-size: 20px;
+    margin-bottom: 50px;
+}
+#star{
+    transform: translateY(+10px);
 }
 /* end region main bottom */
 
@@ -178,11 +199,12 @@ h3{
 /* end region footer top */
 .rectangle{
     margin-top: 90px;
+    margin-bottom: 30px;
 }
 h4{
     color: var(--discord-primary-important-things);
-    font-size: 35px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .element{
@@ -203,13 +225,15 @@ span{
  }
  
  .widget > img{
-    margin: 10px 5px 0 0;
-    width: 30px;
+    margin: 30px 15px 0 0;
+    width: 20px;
     vertical-align: middle;
  }
  ul > li{
     list-style-type: none;
     color: var(--discord-lighter);
+    line-height: 30px;
+    font-weight: 500;
  }
 a{
     text-decoration: none;
@@ -220,10 +244,10 @@ a{
 /* region footer bottom */
 .footer-bottom{
     border-top: 1px solid var(--discord-primary-important-things);
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 90px;
 }
-.bt{
+.btn-end{
  text-align: end;
 }
 .btn-sign-up{
