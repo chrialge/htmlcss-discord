@@ -19,9 +19,9 @@
 /* end region common */
 
 /* region utilies */
-.btn{
+.btn-small{
     border-radius: 2rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
 }
 #site-header{
     background-color: var(--discord-primary);
@@ -37,9 +37,11 @@
 }
 .square-small{
     width: 60%;
-    max-width: 900px;
-    margin:auto;
+    max-width: 850px;
+    margin: auto;
     height: 500px;
+    color: white;
+    padding: 20px 8px;
 }
 .square-60{
     width: 60%;
@@ -95,8 +97,31 @@ li{
 
 /* region main top */
 .download-discord{
-    height: 600px;
-    background-color: var(--discord-primary);
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+p{
+    font-size: 22px;
+    margin: 40px 0;
+    line-height: 35px;
+}
+.btn-big{
+    border-radius: 2rem;
+    font-size: 25px;
+    padding: 0.75rem 1.5rem;
+    margin-right: 20px ;
+}
+.btn-browser{
+    background-color: var(--discord-dark);
+    color: var(--discord-lighter);
 }
 
 /* end region main top */
@@ -130,7 +155,7 @@ li{
     background-color: green;
 
 }
-.btn{
+.bt{
  text-align: end;
 }
 /* end region footer bottom */
