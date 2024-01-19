@@ -114,18 +114,28 @@ h1{
 }
 p{
     font-size: 22px;
-    margin: 40px 0;
+    margin-top: 30px;
     line-height: 30px;
 }
 .btn-big{
     border-radius: 2rem;
     font-size: 25px;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2rem;
     margin-right: 20px ;
 }
 .btn-browser{
     background-color: var(--discord-dark);
     color: var(--discord-lighter);
+}
+.color-font-footer-primary
+{
+   color: var(--discord-primary-important-things);
+
+}
+.color-font-footer-secondary
+{
+   color: var(--discord-lighter);
+
 }
 
 /* end region main top */
@@ -138,8 +148,21 @@ h2{
 /* end region main central */
 
 /* region main bottom */
-.debug{
-    height: 300px;
+.video-call{
+    text-align: center;
+
+}
+.position-button{
+    margin-top: 40px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+.btn-bottom-download{
+    background-color: var(--discord-primary-important-things);
+    color: var(--discord-lighter);
+    font-size: 20px;
 }
 /* end region main bottom */
 
