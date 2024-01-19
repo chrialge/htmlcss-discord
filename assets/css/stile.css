@@ -56,12 +56,6 @@
 .color-light{
     background-color: var(--discord-light);
 }
-.color-lighter{
-    background-color: var(--discord-lighter);
-}
-#site-footer{
-    background-color: var(--discord-dark);
-}
 .grow{
     flex-grow: 1;
 }
@@ -145,7 +139,15 @@ p{
 h2{
     font-size: 48px;
 }
+.wave{
+    width: 100%;
+}
+#wave-light{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
+}
 /* end region main central */
 
 /* region main bottom */
