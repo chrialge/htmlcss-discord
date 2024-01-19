@@ -216,12 +216,17 @@ a{
 
 }
 /* region footer bottom */
-.dbg{
-    background-color: green;
-
+.footer-bottom{
+    border-top: 1px solid var(--discord-primary-important-things);
+    padding-top: 30px;
+    padding-bottom: 90px;
 }
 .bt{
  text-align: end;
+}
+.btn-sign-up{
+    background-color: var(--discord-primary-important-things);
+    color: var(--discord-lighter);
 }
 /* end region footer bottom */
 
