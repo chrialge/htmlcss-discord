@@ -13,12 +13,16 @@
     padding: 0;
     box-sizing: border-box;
     border: 1px dashed black;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* end region common */
 
 /* region utilies */
-
+.btn{
+    border-radius: 2rem;
+    padding: 0.5rem 0.75rem;
+}
 #site-header{
     background-color: var(--discord-primary);
     display: flex;
@@ -75,6 +79,7 @@ nav{
     text-align: end;
 }
 .sidebar{
+    color: white;
     display: flex;
     list-style: none;
     gap: 0.5rem;
