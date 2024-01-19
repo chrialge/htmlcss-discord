@@ -41,16 +41,16 @@
     margin: auto;
     height: 500px;
     color: white;
-    padding: 20px 8px;
+    padding: 45px 0;
 }
 .square-60{
     width: 60%;
-    height: 300px;
 }
 .square-40{
     width: 40%;
-    height: 300px;
-
+    font-size: 20px;
+    color: var(--discord-dark);
+    padding: 30px 64px;
 }
 .color-light{
     background-color: var(--discord-light);
@@ -65,6 +65,10 @@
 .grow{
     flex-grow: 1;
 }
+section{
+    padding: 50px;
+}
+
 /* end region utilies */
 
 /* region header */
@@ -99,7 +103,7 @@ li{
 .download-discord{
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    height: 800px;
+    height: 620px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -111,7 +115,7 @@ h1{
 p{
     font-size: 22px;
     margin: 40px 0;
-    line-height: 35px;
+    line-height: 30px;
 }
 .btn-big{
     border-radius: 2rem;
@@ -127,6 +131,9 @@ p{
 /* end region main top */
 
 /* region main central */
+h2{
+    font-size: 48px;
+}
 
 /* end region main central */
 
