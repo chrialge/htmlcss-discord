@@ -106,11 +106,17 @@ li{
 /* region main */
 
 /* region main top */
+.reduction{
+    width: 100vw;
+    height: 620px;
+}
 .download-discord{
+    object-fit: fill;
+    width: 100%;
     background-attachment: fixed;
     background-image: url(../img/jumbo.png);
-    background-size: cover;
-    height: 620px;
+    background-size: contain;
+    height: 100%;
     text-align: center;
 }
 h1{
