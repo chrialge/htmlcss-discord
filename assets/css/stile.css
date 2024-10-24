@@ -1,6 +1,6 @@
 /* region common */
 
-:root{
+:root {
     --discord-primary: #3161e0;
     --discord-dark: #23272a;
     --discord-light: #f6f6f6;
@@ -8,70 +8,100 @@
     --discord-primary-important-things: #8ea1e1;
     --discord-color-text-normal: #434649;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* border: 1px dashed black; */
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 /* end region common */
 
 /* region utilies */
-.btn-small{
+.btn-small {
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     border: none;
 }
-#site-header{
+
+#site-header {
     background-color: var(--discord-primary);
     width: 100%;
     position: fixed;
     z-index: 1;
 }
-.container{
+
+.row {
+    flex-wrap: wrap;
+}
+
+.container {
     width: 80%;
     max-width: 1200px;
     margin: auto;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.square-small{
+
+.square-small {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 60%;
     max-width: 850px;
     margin: auto;
-    height: 500px;
+
     color: white;
     padding: 45px 0;
 }
-.square-60{
+
+.square-60 {
     width: 60%;
+
+    &>img {
+        width: 100%;
+    }
 }
-.square-40{
+
+.square-40 {
     width: 40%;
     font-size: 20px;
     color: var(--discord-dark);
     padding: 30px 64px;
+
+    &>img {
+        width: 100%;
+    }
 }
-#site-footer{
+
+#site-footer {
     background-color: var(--discord-dark);
+
+    &>.container:first-child {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 }
-.grow{
+
+.grow {
     flex-grow: 1;
 }
-section{
+
+section {
     padding: 50px;
 }
-.color-light{
+
+.color-light {
     background-color: var(--discord-light);
 }
-.color-lighter{
+
+.color-lighter {
     background-color: var(--discord-lighter);
 }
 
@@ -79,25 +109,29 @@ section{
 
 /* region header */
 
-nav{
+nav {
     align-items: center;
     display: flex;
 }
-.logo{
+
+.logo {
     flex-grow: 1;
 }
-.login{
+
+.login {
     flex-grow: 1;
     text-align: end;
 }
-.sidebar{
+
+.sidebar {
     color: white;
     display: flex;
     list-style: none;
     gap: 0.5rem;
     justify-content: center;
 }
-li{
+
+li {
     padding: 0.25rem 0.75rem;
 }
 
@@ -106,90 +140,108 @@ li{
 /* region main */
 
 /* region main top */
-.reduction{
-    width: 100vw;
-    height: 620px;
+.reduction {
+    width: 100%;
+    height: 900px;
+    padding: 0;
 }
-.download-discord{
-    object-fit: fill;
+
+.download-discord {
     width: 100%;
     background-attachment: fixed;
     background-image: url(../img/jumbo.png);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1{
+
+h1 {
     font-size: 70px;
     font-weight: 900;
 }
-p{
+
+p {
     font-weight: 500;
     font-size: 22px;
     line-height: 30px;
 }
-.btn-big{
+
+.btn-big {
     border-radius: 2rem;
     font-size: 25px;
     padding: 0.75rem 2rem;
-    margin-right: 20px ;
+    margin-right: 20px;
     border: none;
 }
-.btn-browser{
+
+.btn-browser {
     background-color: var(--discord-dark);
     color: var(--discord-lighter);
 }
-.color-font-footer-primary
-{
-   color: var(--discord-primary-important-things);
+
+.color-font-footer-primary {
+    color: var(--discord-primary-important-things);
 
 }
-.color-font-footer-secondary
-{
-   color: var(--discord-lighter);
+
+.color-font-footer-secondary {
+    color: var(--discord-lighter);
 
 }
 
 /* end region main top */
 
 /* region main central */
-h2{
+h2 {
     font-size: 48px;
 }
-.wave-divisor{
+
+.wave-divisor {
     display: flex;
     width: 100%;
 }
-.wave-rotate-180{
+
+.wave-rotate-180 {
     transform: rotate(180deg);
 }
+
 /* end region main central */
 
 /* region main bottom */
-#image-big{
+#image-big {
     width: 100%;
 }
-.video-call{
+
+.video-call {
     text-align: center;
 
 }
-.position-button{
+
+.position-button {
     margin-top: 40px;
 }
-h3{
+
+h3 {
     font-size: 30px;
     font-weight: 900;
     margin-bottom: 30px;
 }
-.btn-bottom-download{
+
+.btn-bottom-download {
     background-color: var(--discord-primary-important-things);
     color: var(--discord-lighter);
     font-size: 20px;
     margin-bottom: 50px;
 }
-#star{
+
+#star {
     transform: translateY(+10px);
 }
+
 /* end region main bottom */
 
 /* end region main */
@@ -199,69 +251,109 @@ h3{
 /* region footer top */
 
 /* end region footer top */
-.rectangle{
-    margin-top: 90px;
-    margin-bottom: 30px;
+
+
+
+.rectangle {
+    padding-top: 15px;
 }
-h4{
+
+h4 {
     color: var(--discord-primary-important-things);
     font-size: 36px;
     margin-bottom: 30px;
 }
 
-.element{
+.element {
     width: 30%;
+    min-width: 187px;
 }
-span{
+
+span {
     color: var(--discord-lighter);
 }
-.language{
+
+.language {
     vertical-align: middle;
 }
- span > img{
+
+span>img {
     width: 30px;
     vertical-align: middle;
- }
- #reduction{
+}
+
+#reduction {
     width: 20px;
- }
- 
- .widget > img{
+}
+
+.widget>img {
     margin: 30px 15px 0 0;
     width: 20px;
     vertical-align: middle;
- }
- ul > li{
+}
+
+ul>li {
     list-style-type: none;
     color: var(--discord-lighter);
     line-height: 30px;
     font-weight: 500;
- }
-a{
+}
+
+a {
     text-decoration: none;
     color: var(--discord-primary-important-things);
     margin-left: 10px;
 
 }
+
 /* region footer bottom */
-.footer-bottom{
+.footer-bottom {
     border-top: 1px solid var(--discord-primary-important-things);
     padding-top: 50px;
     padding-bottom: 90px;
 }
-.btn-end{
- text-align: end;
+
+.btn-end {
+    text-align: end;
 }
-.btn-sign-up{
+
+.btn-sign-up {
     background-color: var(--discord-primary-important-things);
     color: var(--discord-lighter);
 }
+
 /* end region footer bottom */
 
 /* end region footer */
 
+@media (max-width: 1450px) {
+
+    .square-40,
+    .square-60 {
+        width: 100%;
+    }
+
+    .square-small {
+        width: 95%;
+    }
+
+    .invite-groupe>.container,
+    .fandom>.container {
+        flex-direction: column-reverse;
+    }
 
 
+}
 
+@media (max-width: 500px) {}
 
+@media (max-width: 700px) {
+    section {
+        padding: 50px 10px;
+    }
 
+    .square-40,
+    .square-60 {
+        padding: 0;
+    }
+}
