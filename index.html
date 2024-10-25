@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/stile.css">
-    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+        integrity='sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <title>Discord</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
 </head>
 
 <body>
@@ -26,9 +30,27 @@
                 <li>Sicurezza</li>
                 <li>Assistenza</li>
             </ul>
-            <div class="login">
-                <button class="btn-small">Accedi</button>
+            <div class="left d-flex">
+
+                <div class="login">
+                    <button class="btn-small">Accedi</button>
+                </div>
+                <div class="dropmenu-btn">
+                    <i class="fa-solid fa-ellipsis-vertical" onclick="showDropMenu()"></i>
+                    <div class="container-dropmenu" id="dropmenu-container">
+                        <i class="fa-solid fa-xmark" onclick="closeDropMenu()"></i>
+                        <ul class="dropmenu">
+                            <li>Scarica</li>
+                            <li>Perché Discord</li>
+                            <li>Nitro</li>
+                            <li>Sicurezza</li>
+                            <li>Assistenza</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
+
         </nav>
     </header>
     <!-- /site header -->
@@ -253,7 +275,23 @@
     </footer>
     <!-- /#site-footer -->
 
+    <script>
+        // console.log('ciao')
+        function showDropMenu() {
+            const element = document.getElementById('dropmenu-container');
 
+            element.style.visibility = 'visible';
+            element.style.opacity = 1;
+        }
+
+        function closeDropMenu() {
+            const element = document.getElementById('dropmenu-container');
+
+            element.style.visibility = '';
+            element.style.opacity = '';
+
+        }
+    </script>
 </body>
 
 </html>
